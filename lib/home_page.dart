@@ -1,3 +1,4 @@
+import 'package:companion_robot/pages/speech_to_text.dart';
 import 'package:flutter/material.dart';
 import 'package:rive/rive.dart';
 
@@ -71,6 +72,17 @@ class _HomePageState extends State<HomePage> {
                 },
                 child: const Text("Sedih"),
               ),
+              const SizedBox(
+                width: 16,
+              ),
+              ElevatedButton(
+                  onPressed: () {
+                    Navigator.push(
+                        context,
+                        MaterialPageRoute(
+                            builder: ((context) => const SpeechToText())));
+                  },
+                  child: const Text("Go to speech"))
             ],
           ),
           const SizedBox(
