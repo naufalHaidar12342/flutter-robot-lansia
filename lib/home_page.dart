@@ -80,7 +80,7 @@ class _HomePageState extends State<HomePage> {
                     Navigator.push(
                         context,
                         MaterialPageRoute(
-                            builder: ((context) => const SpeechToText())));
+                            builder: ((context) => const SpeechTT())));
                   },
                   child: const Text("Go to speech"))
             ],
